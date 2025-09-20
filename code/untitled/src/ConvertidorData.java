@@ -1,9 +1,12 @@
 import javax.swing.*;
 import Interfaces.*;
+import adapter.Adaptador;
+import java.util.List;
 
 public class ConvertidorData {
     public static void main(String[] args) {
         FabricaInterfaz fabricaInterfaz;
+        Adaptador adapter = new Adaptador();
         String modos[] = {"Consola", "Grafica"};
         int eleccion = JOptionPane.showOptionDialog(
                 null,
@@ -16,7 +19,7 @@ public class ConvertidorData {
                 modos[0]
         );
         if (eleccion == JOptionPane.CLOSED_OPTION) {
-            return; // Salir si se cierra el diálogo
+            return; 
         }else{
             switch (eleccion){
             case 0:
@@ -28,8 +31,10 @@ public class ConvertidorData {
             default:
                 return;
         }
-        String entrada = fabricaInterfaz.crearEntrada().pedir();
-        fabricaInterfaz.crearSalida().mostrar(entrada);
+        
+        String entrada = fabricaInterfaz.crearEntrada().pedir();    
+        List<Integer> num = adapter.stringToIntAscii(entrada);
+        fabricaInterfaz.crearSalida().mostrar(entrada, num);
     }
 }
 

@@ -1,5 +1,5 @@
 package inout;
 
 public interface Salida {
-    public void mostrar(String dato);
+    public void mostrar(Object dato, Object dato2);
 }
