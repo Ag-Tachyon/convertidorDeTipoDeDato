@@ -25,7 +25,9 @@ Además, se incluyen **adaptadores** para transformar cualquier tipo de dato al 
 ### **Diagrama UML**
 El sistema sigue la siguiente arquitectura:  
 
-![UML](./uml.png)  
+<img width="907" height="673" alt="Adapter" src="https://github.com/user-attachments/assets/8cc8c858-5c52-4e1e-89f5-dbe35f5e46ed" />
+
+
 
 ### **Componentes principales**
 
