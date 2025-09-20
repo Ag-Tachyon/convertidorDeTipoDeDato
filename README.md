@@ -1,7 +1,7 @@
 # 🏭 Patrón Abstract Factory + Adapter - Entrada y Salida de Datos
 
 Juan Sebastian Diaz 20232020071
-Felipe Gil Laverde - 20232020087
+Felipe Gil Laverde - 20232020081
 Juan Esteban Cañon Solorza - 20232020078
 
 Este proyecto implementa el **patrón de diseño Abstract Factory** para crear medios de entrada y salida de datos, permitiendo elegir entre dos entornos:  
