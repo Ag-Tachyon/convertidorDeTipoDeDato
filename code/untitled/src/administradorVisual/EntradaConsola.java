@@ -10,7 +10,6 @@ public class EntradaConsola implements Entrada {
         String a;
         System.out.println("Entrada por consola");
         a = scanner.nextLine();
-        //proceso del adapter
         return a;
     }
 }

@@ -4,7 +4,7 @@ import inout.Salida;
 
 public class SalidaConsola implements Salida {
     @Override
-    public void mostrar(String dato) {
-        System.out.println(dato);
+    public void mostrar(Object dato, Object dato2) {
+        System.out.println("Tu dato en String es: " + dato +"\nTu dato en Int Ascii es: " + dato2);
     }
 }
